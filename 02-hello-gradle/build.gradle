@@ -1,0 +1,14 @@
+task helloWorld {
+    ext {
+        name = "Rodrigo Diego Quispe Laura"
+        email = "rdquispe@protonmail.com"
+        version = "1.0"
+    }
+}
+
+task compilar << {
+    println "Nombre: "+ helloWorld.name + ", Email: " + helloWorld.email + ", Version: "+helloWorld.version
+}
+
+// Run
+// $ gradle -q compilar
