@@ -1,0 +1,25 @@
+task compilar {
+    doLast {
+        println "Compilar proyecto..."
+    }
+}
+
+task distribuir {
+    onlyIf {
+        compilar.didWork
+    }
+
+    doLast {
+        println "Distribuir proyecto..."
+    }
+}
+
+task distribuirSiExisteArchivo {
+    onlyIf {
+        new File('configuracion.xml').exists()
+    }
+
+    doLast {
+        println "Existe el archivo ahora si se puede ejecutar esta tarea..."
+    }
+}
