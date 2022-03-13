@@ -1,0 +1,19 @@
+task compilar << {
+    println "Estoy compilando..."
+}
+
+// Run
+// $ gradle -q compilar
+// Or
+// $ gradle compilar
+
+// Show gradle tasks
+// $ gradle -q tasks
+
+
+task pruebasUnitarias << {
+    println "Estoy lanzando pruebas unitarias"
+}
+
+// Run
+// $ gradle -q pruebasUnitarias
