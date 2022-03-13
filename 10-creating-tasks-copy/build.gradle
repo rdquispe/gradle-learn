@@ -1,0 +1,9 @@
+task crearDirectorio << {
+    new File('dist').mkdirs()
+}
+
+
+task copiar(type: Copy, dependsOn: crearDirectorio) {
+    from 'tools'
+    into 'dist/tools'
+}
