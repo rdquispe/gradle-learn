@@ -1,0 +1,22 @@
+task a << {
+    println "Task A"
+}
+
+task b {
+
+    dependsOn: 'a'
+
+    doLast {
+        println "Task B"
+    }
+}
+
+task c(dependsOn: 'b') << {
+    println "Task C"
+}
+
+// Run
+// $ gradle c
+
+// Run
+// $ gradle b
