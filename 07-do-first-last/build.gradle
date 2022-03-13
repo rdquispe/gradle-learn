@@ -1,0 +1,12 @@
+task holaMundo {
+
+    println "Configurando..."
+    
+    doFirst {
+        println "Call first"
+    }
+
+    doLast {
+        println "Call last"
+    }
+}
