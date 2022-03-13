@@ -1,0 +1,7 @@
+task helloWorld {
+    ext.proyecto = "My project"
+
+    doLast {
+        println "Compilando proyecto... " + proyecto
+    }
+}
