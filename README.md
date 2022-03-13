@@ -1,7 +1,7 @@
 # gradle-learn
 
 
-## Prerequisites
+### Prerequisites
 
 
 https://gradle.org/install/
